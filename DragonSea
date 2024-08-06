@@ -1,4 +1,1 @@
-if game.PlaceId == 10464237910 then
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Toilaai4141/Freefrai/main/Toilafanmettobiet"))()
-elseif game.PlaceId == 10260193230 then
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/MemeSea/main/Source.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Toilaai4141/Freefrai/main/Toilafanmettobiet"))()
