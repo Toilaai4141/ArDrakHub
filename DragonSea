@@ -1,2 +1,5 @@
 local Games = {
     [10464237910] = "https://raw.githubusercontent.com/Toilaai4141/Freefrai/main/Toilafanmettobiet",
+}
+
+return Games
