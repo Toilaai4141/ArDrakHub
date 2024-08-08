@@ -269,7 +269,6 @@ CheckQuest()
 
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/Toilaai4141/Ui/main/Fluent.txt"))()
 
-
 local Window = Fluent:CreateWindow({
     Title = "ArDrak Hub | ".. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.. " (First Sea)",
     SubTitle = "| V6",
@@ -285,27 +284,6 @@ local Window = Fluent:CreateWindow({
 local Tabs = {
     infoTab = Window:AddTab({ Title = "info hub", Icon = "rbxassetid://17515562390" }),
 }
-
-Tabs.infoTab:AddButton({
-        Title = "Discord",
-        Description = "Very important button",
-        Callback = function()
-        setclipboard(https://discord.com/invite/p9D6TtzR)
-        end
-    })
-    
-Tabs.infoTab:AddButton({
-        Title = "Youtuber",
-        Description = "Very important button",
-        Callback = function()
-        setclipboard(https://www.youtube.com/@hungty4141)
-        end
-    })
-    
-Tabs.infoTab:AddParagraph({
-        Title = "Cuc cung myheart",
-        Content = "cutephomaiquehotvit"
-    })
 
 --   Dark   Light  Aqua Amethyst
 local Tabs = {
