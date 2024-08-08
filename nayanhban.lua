@@ -381,8 +381,59 @@ local Toggle = Tabs.ArTab:AddToggle("Toggle", {Title = "Auto Fruit", Default = f
     
 --   Dark   Light  Aqua Amethyst
 local Tabs = {
-    MiscTab = Window:AddTab({ Title = "Fruit", Icon = "rbxassetid://17515562390" }),
+    MiscTab = Window:AddTab({ Title = "Esp", Icon = "rbxassetid://17515562390" }),
 }
+
+local Toggle = Tabs.MiscTab:AddToggle("Dragon Ball", {Title = "Toggle", Default = false })
+
+    Toggle:OnChanged(function(va)
+        DragonBallESP = va
+    while DragonBallESP do wait()
+        UpdateDBEsp() 
+    end
+    end)
+    
+    local Toggle = Tabs.Misc:AddToggle("MyToggle", {Title = "Esp Fruit", Default = false })
+
+    Toggle:OnChanged(function(va)
+        DevilFruitESP = va
+    while DevilFruitESP do wait()
+        UpdateBfEsp() 
+    end
+    end)
+    
+--   Dark   Light  Aqua Amethyst
+local Tabs = {
+    NguTab = Window:AddTab({ Title = "Fruit", Icon = "rbxassetid://17515562390" }),
+}
+
+local Toggle = Tabs.NguTab:AddToggle("MyToggle", {Title = "Grab Fruit", Default = false })
+
+    Toggle:OnChanged(function()
+        pcall(function()
+        for _,v in pairs(game.workspace:GetChildren()) do
+            if string.find(v.Name,"Fruit") then
+                if v:IsA("Tool") then
+                    v.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                end
+            end
+        end
+    end
+    end)
+    
+local Toggle = Tabs.NguTab:AddToggle("MyToggle", {Title = "Grab Ball", Default = false })
+
+    Toggle:OnChanged(function()
+        pcall(function()
+        for _,v in pairs(game.workspace:GetChildren()) do
+            if string.find(v.Name, "DB1") or string.find(v.Name, "DB2") or string.find(v.Name, "DB3") or string.find(v.Name, "DB4") or string.find(v.Name, "DB5") or string.find(v.Name, "DB6") or string.find(v.Name, "DB7") then
+                if v:IsA("Tool") then
+                    v.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                end
+            end
+        end
+    end
+    end)
 
 --   Dark   Light  Aqua Amethyst
 local Tabs = {
