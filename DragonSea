@@ -1,25 +1,758 @@
-Error during obfuscation: lua: ./src\logger.lua:54: Lexing Error at Position 301:45, Unexpected char "\064"!
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function nplPEhbTmUXctOaqhoqUDZgiOZBCSwFmCANjekcfoWuyofVjfxutvSpyQGRiNCXEODJuYTkh(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
 
-stack traceback:
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
 
-	[C]: in function 'error'
 
-	./src\logger.lua:54: in function 'errorCallback'
+ 
 
-	./src\logger.lua:57: in function 'error'
 
-	./src\prometheus\tokenizer.lua:534: in function 'next'
+function rjqEJMHzehzazeEYxQzYfMKlJtxWDQLFzvSYrqZmYWZUhMrvtSLLkCmzmOKiPMqRgmOxfWwrmMbYtwaBcFYVfP(c)
+tab={}
+for i = 1,#c do
+x=string.len(c[i]) 
+y=string.char(x)
+table.insert(tab,y)
+end
+x=table.concat(tab)
+return x
+end 
 
-	./src\prometheus\tokenizer.lua:540: in function 'scanAll'
 
-	./src\prometheus\parser.lua:143: in function 'parse'
+function PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep(code)res=rjqEJMHzehzazeEYxQzYfMKlJtxWDQLFzvSYrqZmYWZUhMrvtSLLkCmzmOKiPMqRgmOxfWwrmMbYtwaBcFYVfP({})for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
 
-	./src\prometheus\pipeline.lua:178: in function 'apply'
 
-	./src\cli.lua:148: in main chunk
+repeat wait() until game:IsLoaded()
 
-	[C]: in function 'require'
+function TP(pos)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end
 
-	./cli.lua:12: in main chunk
+function Click()
+    game:GetServicePiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({9030,11025,11970,12180,12285,10185,11340,8925,12075,10605,11970}):Button1Down(Vector2.new(0.9,0.9))
+    game:GetServicePiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({9030,11025,11970,12180,12285,10185,11340,8925,12075,10605,11970}):Button1Up(Vector2.new(0.9,0.9))
+end
 
-	[C]: ?
+function EquipWeapon(ToolSe)
+    if game.Players.LocalPlayer.Backpack:FindFirstChild(ToolSe) then
+        getgenv().tool = game.Players.LocalPlayer.Backpack:FindFirstChild(ToolSe)
+        wait()
+        game.Players.LocalPlayer.Character.Humanoid:EquipTool(tool)
+    end
+end
+
+
+_G.ColorESP = Color3.new(0,255,255)
+
+function isnil(thing)
+    return (thing == nil)
+end
+local function round(n)
+    return math.floor(tonumber(n) + 0.5)
+end
+Number = math.random(1, 1000000)
+function UpdateBfEsp() 
+    for i,v in pairs(game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({9135,11655,11970,11235,12075,11760,10185,10395,10605})):GetChildren()) do
+        pcall(function()
+            if DevilFruitESP then
+                if string.find(v.Name, PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7350,11970,12285,11025,12180})) then   
+                    if not v.Handle:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,10185,11445,10605,7245,12075,11760})..Number) then
+                        local bill = Instance.new(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6930,11025,11340,11340,10290,11655,10185,11970,10500,7455,12285,11025}),v.Handle)
+                        bill.Name = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,10185,11445,10605,7245,12075,11760})..Number
+                        bill.ExtentsOffset = Vector3.new(0, 1, 0)
+                        bill.Size = UDim2.new(1,200,1,30)
+                        bill.Adornee = v.Handle
+                        bill.AlwaysOnTop = true
+                        local name = Instance.new(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,10605,12600,12180,7980,10185,10290,10605,11340}),bill)
+                        name.Font = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7455,11655,12180,10920,10185,11445,6930,11655,11340,10500})
+                        name.FontSize = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,11025,12810,10605,5145,5460})
+                        name.TextWrapped = true
+                        name.Size = UDim2.new(1,0,1,0)
+                        name.TextYAlignment = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11655,11760})
+                        name.BackgroundTransparency = 1
+                        name.TextStrokeTransparency = 0.5
+                        name.TextColor3 = _G.ColorESP
+                        name.Text = (v.Name ..PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({3360,9660,11550}).. round((game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({3360,8085}))
+                    else
+                        v.Handle[PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,10185,11445,10605,7245,12075,11760})..Number].TextLabel.Text = (v.Name ..PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({3360,3360,3360,9660,11550}).. round((game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({3360,8085}))
+                    end
+                end
+            else
+                if v.Handle:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,10185,11445,10605,7245,12075,11760})..Number) then
+                    v.Handle:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,10185,11445,10605,7245,12075,11760})..Number):Destroy()
+                end
+            end
+        end)
+    end
+end
+
+function isnil(thing)
+    return (thing == nil)
+end
+local function round(n)
+    return math.floor(tonumber(n) + 0.5)
+end
+Number = math.random(1, 1000000)
+function UpdateDBEsp() 
+    for i,v in pairs(game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({9135,11655,11970,11235,12075,11760,10185,10395,10605})):GetChildren()) do
+        pcall(function()
+            if DragonBallESP then
+                if string.find(v.Name, PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,6930,5145})) or string.find(v.Name, PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,6930,5250})) or string.find(v.Name, PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,6930,5355})) or string.find(v.Name, PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,6930,5460})) or string.find(v.Name, PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,6930,5565})) or string.find(v.Name, PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,6930,5670})) or string.find(v.Name, PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,6930,5775})) then   
+                    if not v.Handle:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,10185,11445,10605,7245,12075,11760})..Number) then
+                        local bill = Instance.new(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6930,11025,11340,11340,10290,11655,10185,11970,10500,7455,12285,11025}),v.Handle)
+                        bill.Name = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,10185,11445,10605,7245,12075,11760})..Number
+                        bill.ExtentsOffset = Vector3.new(0, 1, 0)
+                        bill.Size = UDim2.new(1,200,1,30)
+                        bill.Adornee = v.Handle
+                        bill.AlwaysOnTop = true
+                        local name = Instance.new(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,10605,12600,12180,7980,10185,10290,10605,11340}),bill)
+                        name.Font = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7455,11655,12180,10920,10185,11445,6930,11655,11340,10500})
+                        name.FontSize = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,11025,12810,10605,5145,5460})
+                        name.TextWrapped = true
+                        name.Size = UDim2.new(1,0,1,0)
+                        name.TextYAlignment = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11655,11760})
+                        name.BackgroundTransparency = 1
+                        name.TextStrokeTransparency = 0.5
+                        name.TextColor3 = _G.ColorESP
+                        name.Text = (v.Name ..PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({3360,9660,11550}).. round((game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({3360,8085}))
+                    else
+                        v.Handle[PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,10185,11445,10605,7245,12075,11760})..Number].TextLabel.Text = (v.Name ..PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({3360,3360,3360,9660,11550}).. round((game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({3360,8085}))
+                    end
+                end
+            else
+                if v.Handle:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,10185,11445,10605,7245,12075,11760})..Number) then
+                    v.Handle:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,10185,11445,10605,7245,12075,11760})..Number):Destroy()
+                end
+            end
+        end)
+    end
+end
+
+function UnEquipWeapon(ToolSess)
+    if game.Players.LocalPlayer.Character:FindFirstChild(ToolSess) then
+        getgenv().toolun = game.Players.LocalPlayer.Character:FindFirstChild(ToolSess)
+        wait()
+        game.Players.LocalPlayer.Character.Humanoid:UnequipTools(toolun)
+    end
+end
+
+_G.Color = Color3.fromRGB(11, 230, 113)
+_G.Logo = 15094837583
+wait(0.1)
+
+local Weaponlist = {}
+function Update()
+    for i,v in pairs(game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Backpack:GetChildren()) do
+        table.insert(Weaponlist,v.Name)
+    end   
+end
+
+Update()
+
+
+function CheckQuest()
+    local Level = game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Data.Levels.Value
+    if Level == 1 or Level <= 49 then
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,8505,12285,10605,12075,12180})
+        Num = 1
+    elseif Level == 50 or Level <= 99 then
+        Nume = 1
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5565,5040,8505,12285,10605,12075,12180})
+        Num = 2
+    elseif Level == 100 or Level <= 149 then
+        Num2 = 2
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5040,5040,8505,12285,10605,12075,12180})
+        Num = 3
+    elseif Level == 150 or Level <= 199 then
+        Nume = 3
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5565,5040,8505,12285,10605,12075,12180})
+        Num = 4
+    elseif Level == 200 or Level <= 249 then
+        Nume = 4
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5250,5040,5040,8505,12285,10605,12075,12180})
+        Num = 5
+    elseif Level == 250 or Level <= 299 then
+        Nume = 5
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5250,5565,5040,8505,12285,10605,12075,12180})
+        Num = 6
+    elseif Level == 300 or Level <= 349 then
+        Nume = 6
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5355,5040,5040,8505,12285,10605,12075,12180})
+        Num = 7
+    elseif Level == 350 or Level <= 399 then
+        Nume = 7
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5355,5565,5040,8505,12285,10605,12075,12180})
+        Num = 8
+    elseif Level == 400 or Level <= 499 then
+        Nume = 8
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5460,5040,5040,8505,12285,10605,12075,12180})
+        Num = 9
+    elseif Level == 500 or Level <= 549 then
+        Nume = 9
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5565,5040,5040,8505,12285,10605,12075,12180})
+        Num = 10
+    elseif Level == 550 or Level <= 599 then
+        Nume = 10
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5565,5565,5040,8505,12285,10605,12075,12180})
+        Num = 11
+    elseif Level == 600 or Level <= 649 then
+        Nume = 11
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5670,5040,5040,8505,12285,10605,12075,12180})
+        Num = 12
+    elseif Level == 650 or Level <= 699 then
+        Nume = 12
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5670,5565,5040,8505,12285,10605,12075,12180})
+        Num = 13
+    elseif Level == 700 or Level <= 749 then
+        Nume = 13
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5775,5040,5040,8505,12285,10605,12075,12180})
+        Num = 14
+    elseif Level == 750 or Level <= 799 then
+        Nume = 14
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5775,5565,5040,8505,12285,10605,12075,12180})
+        Num = 15
+    elseif Level == 800 or Level <= 849 then
+        Nume = 15
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5880,5040,5040,8505,12285,10605,12075,12180})
+        Num = 16
+    elseif Level == 850 or Level <= 899 then
+        Nume = 16
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5880,5565,5040,8505,12285,10605,12075,12180})
+        Num = 17
+    elseif Level == 900 or Level <= 999 then
+        Nume = 17
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5985,5040,5040,8505,12285,10605,12075,12180})
+        Num = 18
+    elseif Level == 1000 or Level <= 1049 then
+        Nume = 18
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5040,5040,5040,8505,12285,10605,12075,12180})
+        Num = 19
+    elseif Level == 1050 or Level <= 1099 then
+        Nume = 19
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5040,5565,5040,8505,12285,10605,12075,12180})
+        Num = 20
+    elseif Level == 1100 or Level <= 1299 then
+        Nume = 20
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5145,5040,5040,8505,12285,10605,12075,12180})
+        Num = 21
+    elseif Level == 1300 or Level <= 1399 then
+        Nume = 21
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5355,5040,5040,8505,12285,10605,12075,12180})
+        Num = 22
+    elseif Level == 1400 or Level <= 1449 then
+        Nume = 22
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5460,5040,5040,8505,12285,10605,12075,12180})
+        Num = 23
+    elseif Level == 1450 or Level <= 1499 then
+        Nume = 23
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5460,5565,5040,8505,12285,10605,12075,12180})
+        Num = 24
+    elseif Level == 1500 or Level <= 1549 then
+        Nume = 24
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5565,5040,5040,8505,12285,10605,12075,12180})
+        Num = 25
+    elseif Level == 1550 or Level <= 1599 then
+        Nume = 25
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5565,5565,5040,8505,12285,10605,12075,12180})
+        Num = 26
+    elseif Level == 1600 or Level <= 1649 then
+        Nume = 26
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5670,5040,5040,8505,12285,10605,12075,12180})
+        Num = 27
+    elseif Level == 1650 or Level <= 1699 then
+        Nume = 27
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5670,5565,5040,8505,12285,10605,12075,12180})
+        Num = 28
+    elseif Level == 1700 or Level <= 1749 then
+        Nume = 28
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5775,5040,5040,8505,12285,10605,12075,12180})
+        Num = 29
+    elseif Level == 1750 or Level <= 1799 then
+        Nume = 29
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5775,5565,5040,8505,12285,10605,12075,12180})
+        Num = 30
+    elseif Level == 1800 or Level <= 1849 then
+        Nume = 30
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5880,5040,5040,8505,12285,10605,12075,12180})
+        Num = 31
+    elseif Level == 1850 or Level <= 1899 then
+        Nume = 31
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5880,5565,5040,8505,12285,10605,12075,12180})
+        Num = 32
+    elseif Level == 1900 or Level <= 1949 then
+        Nume = 32
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5985,5040,5040,8505,12285,10605,12075,12180})
+        Num = 33
+    elseif Level == 1950 or Level <= 1999 then
+        Nume = 33
+        QuestN = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,12390,5145,5985,5565,5040,8505,12285,10605,12075,12180})
+        Num = 34
+    end
+end
+CheckQuest()
+
+local Fluent = loadstring(game:HttpGet(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,8820,11655,11025,11340,10185,10185,11025,5460,5145,5460,5145,4935,8925,11025,4935,11445,10185,11025,11550,4935,7350,11340,12285,10605,11550,12180,4830,12180,12600,12180})))()
+
+
+local Window = Fluent:CreateWindow({
+    Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6825,11970,7140,11970,10185,11235,3360,7560,12285,10290,3360,13020,3360}).. game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8085,10185,11970,11235,10605,12180,11760,11340,10185,10395,10605,8715,10605,11970,12390,11025,10395,10605})):GetProductInfo(game.PlaceId).Name.. PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({3360,4200,7350,11025,11970,12075,12180,3360,8715,10605,10185,4305}),
+    SubTitle = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({13020,3360,9030,5670}),
+    TabWidth = 95,
+    Size = UDim2.fromOffset(480, 380),
+    Acrylic = false,
+    Theme = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,10185,11970,11235,10605,11970}),
+    MinimizeKey = Enum.KeyCode.F15
+})
+
+
+--   Dark   Light  Aqua Amethyst
+local Tabs = {
+    infoTab = Window:AddTab({ Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({11025,11550,10710,11655,3360,10920,12285,10290}), Icon = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5775,5565,5145,5565,5565,5670,5250,5355,5985,5040}) }),
+}
+
+Tabs.infoTab:AddButton({
+        Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,11025,12075,10395,11655,11970,10500}),
+        Description = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({9030,10605,11970,12705,3360,11025,11445,11760,11655,11970,12180,10185,11550,12180,3360,10290,12285,12180,12180,11655,11550}),
+        Callback = function()
+        setclipboard(https://discord.com/invite/p9D6TtzR)
+        end
+    })
+    
+Tabs.infoTab:AddButton({
+        Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({9345,11655,12285,12180,12285,10290,10605,11970}),
+        Description = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({9030,10605,11970,12705,3360,11025,11445,11760,11655,11970,12180,10185,11550,12180,3360,10290,12285,12180,12180,11655,11550}),
+        Callback = function()
+        setclipboard(https://www.youtube.com/@hungty4141)
+        end
+    })
+    
+Tabs.infoTab:AddParagraph({
+        Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7035,12285,10395,3360,10395,12285,11550,10815,3360,11445,12705,10920,10605,10185,11970,12180}),
+        Content = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({10395,12285,12180,10605,11760,10920,11655,11445,10185,11025,11865,12285,10605,10920,11655,12180,12390,11025,12180})
+    })
+
+--   Dark   Light  Aqua Amethyst
+local Tabs = {
+    MainTab = Window:AddTab({ Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7455,10605,11550,10605,11970,10185,11340}), Icon = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5775,5565,5145,5565,5565,5670,5250,5355,5985,5040}) }),
+}
+
+Tabs.MainTab:AddButton({
+        Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,10605,11340,10605,11760,11655,11970,12180,3360,8610,10185,11025,10500}),
+        Description = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({12180,10605,11340,10605,11760,11655,11970,12180,3360,12180,11655,3360,11970,10185,11025,10500,3360,12075,10605,11970,12390,10605,11970}),
+        Callback = function()
+        local TeleportService = game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,10605,11340,10605,11760,11655,11970,12180,8715,10605,11970,12390,11025,10395,10605}))
+				GameId = 13373351184
+				TeleportService:Teleport(GameId, game.Players.LocalPlayer)
+         end
+    })
+    
+    Tabs.MainTab:AddButton({
+        Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,10605,11340,10605,11760,11655,11970,12180,3360,11970,10185,11025,10500,3360,9555,3360,12180,10185,11445,10605,11970,3360,5565,4935,5565,3360,9765}),
+        Description = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({9030,10605,11970,12705,3360,11025,11445,11760,11655,11970,12180,10185,11550,12180,3360,10290,12285,12180,12180,11655,11550}),
+        Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2299.685791015625, 1035.02490234375, -2715.144775390625)
+       end
+    })
+
+local Toggle = Tabs.MainTab:AddToggle(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11655,10815,10815,11340,10605}), {Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6825,12285,12180,11655,3360,7350,11970,10185,11445,3360,8610,10185,11025,10500,12075}), Default = false })
+
+    Toggle:OnChanged(function(value)
+        AutoFarmRaid = value
+    end)
+
+local Toggle = Tabs.MainTab:AddToggle(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11655,10815,10815,11340,10605}), {Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7875,11025,11340,11340,3360,6825,12285,11970,10185,3360,8610,10185,11025,10500,12075}), Default = false })
+
+    Toggle:OnChanged(function(value)
+        KillauraRaid = value
+    end)
+    
+local Toggle = Tabs.MainTab:AddToggle(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11655,10815,10815,11340,10605}), {Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7350,10185,12075,12180,3360,6825,12180,12180,10185,10395,11235,12075,3360,8610,10185,11025,10500}), Default = false })
+
+    Toggle:OnChanged(function(value)
+        CBLRaid = value
+    end)
+    
+Tabs.MainTab:AddParagraph({
+        Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7980,10605,12390,10605,11970,3360,7350,10185,11970,11445}),
+        Content = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({11340,11655,11550,11445,10185,11445,10185,12705})
+    })
+   
+   local Toggle = Tabs.MainTab:AddToggle(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11655,10815,10815,11340,10605}), {Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6825,12285,12180,11655,3360,7350,11970,10185,11445,3360,8610,10185,11025,10500,12075}), Default = false })
+
+    Toggle:OnChanged(function(value)
+        Farm = value
+    end)
+    
+ local Dropdown = Tabs.MainTab:AddDropdown(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,11970,11655,11760,10500,11655,12495,11550}), {
+        Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,11970,11655,11760,10500,11655,12495,11550}),
+        Values = {PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7350,10185,12075,12180})},
+        Multi = false,
+        Default = 1,
+    })
+
+    Dropdown:SetValue(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7350,10185,12075,12180}))
+
+    Dropdown:OnChanged(function(Value)
+        Weapon = Value
+    end)
+    
+--   Dark   Light  Aqua Amethyst
+local Tabs = {
+    ArTab = Window:AddTab({ Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,12180,10185,11970}), Icon = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5775,5565,5145,5565,5565,5670,5250,5355,5985,5040}) }),
+}
+
+local Toggle = Tabs.ArTab:AddToggle(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11655,10815,10815,11340,10605}), {Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6825,12285,12180,11655,3360,8085,10605,11340,10605,10605}), Default = false })
+
+    Toggle:OnChanged(function(value)
+        Melee = value
+    end)
+    
+local Toggle = Tabs.ArTab:AddToggle(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11655,10815,10815,11340,10605}), {Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6825,12285,12180,11655,3360,8715,12495,11655,11970,10500}), Default = false })
+
+    Toggle:OnChanged(function(value)
+        Sword = value
+    end)
+    
+local Toggle = Tabs.ArTab:AddToggle(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11655,10815,10815,11340,10605}), {Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6825,12285,12180,11655,3360,7140,10605,10710,10605,11550,12075,10605}), Default = false })
+
+    Toggle:OnChanged(function(value)
+        Defense = value
+    end)
+    
+local Toggle = Tabs.ArTab:AddToggle(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11655,10815,10815,11340,10605}), {Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6825,12285,12180,11655,3360,7350,11970,12285,11025,12180}), Default = false })
+
+    Toggle:OnChanged(function(value)
+        DevilFruit = value
+    end)
+    
+--   Dark   Light  Aqua Amethyst
+local Tabs = {
+    MiscTab = Window:AddTab({ Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7350,11970,12285,11025,12180}), Icon = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5775,5565,5145,5565,5565,5670,5250,5355,5985,5040}) }),
+}
+
+--   Dark   Light  Aqua Amethyst
+local Tabs = {
+    LonTab = Window:AddTab({ Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({11025,12180,10605,11445,12075}), Icon = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5775,5565,5145,5565,5565,5670,5250,5355,5985,5040}) }),
+}
+
+Tabs.LonTab:AddButton({
+        Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11760,3360,8820,11655,3360,8715,12495,11655,11970,10500,3360,12075,11760,10185,11445}),
+        Description = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({9030,10605,11970,12705,3360,11025,11445,11760,11655,11970,12180,10185,11550,12180,3360,10290,12285,12180,12180,11655,11550}),
+        Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-896.626831, 75.8225098, -3601.07373, -0.327141702, 0, 0.944975376, 0, 1.00000012, -0, -0.944975257, 0, -0.327141732)
+        end
+    })
+    
+Tabs.LonTab:AddButton({
+        Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11760,3360,8820,11655,3360,8715,12495,11655,11970,10500,3360,12075,11760,10185,11445}),
+        Description = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({9030,10605,11970,12705,3360,11025,11445,11760,11655,11970,12180,10185,11550,12180,3360,10290,12285,12180,12180,11655,11550}),
+        Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(150.250183, 477.125305, 1698.29272, 0.950112522, 0, 0.311907351, -0, 1, -0, -0.311907351, 0, 0.950112522)
+        end
+    })
+
+--   Dark   Light  Aqua Amethyst
+local Tabs = {
+    DMTab = Window:AddTab({ Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({11445,11025,12075,10395}), Icon = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5775,5565,5145,5565,5565,5670,5250,5355,5985,5040}) }),
+}
+
+local Slider = Tabs.DMTab:AddSlider(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,11340,11025,10500,10605,11970}), {
+        Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,11760,10605,10605,10500}),
+        Description = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({12075,11760,10605,10605,10500,3360,12180,11655,3360,10815,10185,11445,10605}),
+        Default = 17,
+        Min = 0,
+        Max = 300,
+        Rounding = 1,
+        Callback = function(Value)
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+        end
+    })
+    
+    local Slider = Tabs.DMTab:AddSlider(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,11340,11025,10500,10605,11970}), {
+        Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7770,12285,11445,11760,11760,11655,12495,10605,11970}),
+        Description = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({11130,12285,11445,11760,11760,11655,12495,10605,11970,3360,12180,11655,3360,10815,10185,11445,10605}),
+        Default = 50,
+        Min = 0,
+        Max = 300,
+        Rounding = 1,
+        Callback = function(Value)
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+        end
+    })
+    
+    Tabs.DMTab:AddButton({
+        Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8610,10605,11445,11655,12390,10605,7350,11655,10815}),
+        Description = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({}),
+        Callback = function()
+game.Lighting.FogEnd = 100000
+game.Lighting.FogStart = 0
+game.Lighting.ClockTime = 14
+game.Lighting.Brightness = 2
+game.Lighting.GlobalShadows = false
+        end
+    })
+    
+    
+    
+    function fixQuest()
+    if game.Players.LocalPlayer.PlayerGui:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8505,12285,10605,12075,12180,8820,10185,11235,10605})) then
+        for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
+            if v.Name == PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8505,12285,10605,12075,12180,8820,10185,11235,10605}) then
+                v.Decline.Size = UDim2.new(0, 10000, 0, 10000)
+                v.Decline.Position = UDim2.new(-2, 0, -5, 0)
+                v.Decline.BackgroundTransparency = 1
+            end
+        end   
+        wait(.5)
+        Click()
+    end
+end
+spawn(function()
+    while wait() do
+        if Farm then
+            pcall(function()
+                CheckQuest()
+                if game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Quest.Num.Value == 0 then
+                    CheckQuest()
+                    Fast = false
+                    for _,v in pairs(game.workspace.QuestFolder:GetChildren()) do
+                        if v.Name == QuestN then			
+                            TP(v.ClickPart.CFrame * CFrame.new(0,0,3))
+                            wait(0.1)
+                            Fast = false
+                            fireclickdetector(v.ClickPart.ClickDetector)					
+                        end
+                    end
+                    if game.Players.LocalPlayer.PlayerGui:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8505,12285,10605,12075,12180,8820,10185,11235,10605})) then
+                        local Event = game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.PlayerGui.QuestTake.Accept.RemoteEvent
+                        Event:FireServer()
+                    end 
+                elseif game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Quest.Num.Value == Num then
+                    CheckQuest()
+                    spawn(function()
+                        fixQuest()
+                    end)
+                    for i,x in pairs(game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({9135,11655,11970,11235,12075,11760,10185,10395,10605})).Npc:GetChildren()) do
+                        if x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,10185,12180,10185})) then
+                            if Num ~= 1 and x.Data.Num.Value ~= 1 and Dupe then
+                                if x.Data.Num.Value == Num then
+                                    if x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500})) and x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500})).Health ~= 0 and x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180})) then
+                                        repeat game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605})).Heartbeat:wait()
+                                            EquipWeapon(Weapon)
+                                            if Method == PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,11655,11970,11445,10185,11340})then
+                                                Click()
+                                            elseif Method == PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7350,10185,12075,12180}) then
+                                                Fast = true
+                                            else
+                                                Click()   
+                                            end
+                                            TP(x.HumanoidRootPart.CFrame * CFrame.new(0,7,DistanceMob))
+                                        until x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500})).Health <= 0 or not Farm or not x.Parent or game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Quest.Num.Value == 0
+                                    end
+                                else
+                                    if x.Data.Num.Value == Nume then
+                                        if x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500})) and x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500})).Health ~= 0 and x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180})) then
+                                            repeat game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605})).Heartbeat:wait()
+                                                EquipWeapon(Weapon)
+                                                if Method == PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,11655,11970,11445,10185,11340})then
+                                                    Click()
+                                                elseif Method == PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7350,10185,12075,12180}) then
+                                                    Fast = true
+                                                else
+                                                    Click()   
+                                                end
+                                                TP(x.HumanoidRootPart.CFrame * CFrame.new(0,7,DistanceMob))
+                                            until x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500})).Health <= 0 or not Farm or not x.Parent or game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Quest.Num.Value == 0
+                                        end
+                                    end
+                                end
+                            else
+                                if x.Data.Num.Value == Num then
+                                    if x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500})) and x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500})).Health ~= 0 and x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180})) then
+                                        repeat game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605})).Heartbeat:wait()
+                                            EquipWeapon(Weapon)
+                                            if Method == PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,11655,11970,11445,10185,11340})then
+                                                Click()
+                                            elseif Method == PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7350,10185,12075,12180}) then
+                                                Fast = true
+                                            else
+                                                Click()   
+                                            end
+                                            TP(x.HumanoidRootPart.CFrame * CFrame.new(0,7,DistanceMob))
+                                        until x:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500})).Health <= 0 or not Farm or not x.Parent or game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Quest.Num.Value == 0
+                                    end
+                                end
+                            end
+                        end
+                    end
+                elseif game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Quest.Num.Value ~= Num and game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Quest.Num.Value ~= 0 then
+                    UnEquipWeapon(Weapon)
+                    CheckQuest()
+                    Fast = false
+
+                    spawn(function()
+                        fixQuest()
+                    end)
+
+                    if game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Quest.Num.Value ~= Num then
+                        if game.Players.LocalPlayer.PlayerGui:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8505,12285,10605,12075,12180,6930,10185,11970})) then
+                            local Event = game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.PlayerGui.QuestBar.Background.Cancle.RemoteEvent
+                            Event:FireServer()
+                        end
+                    end
+                    wait()
+                    for _,v in pairs(game.workspace.QuestFolder:GetChildren()) do
+                        if v.Name == QuestN then			
+                            TP(v.ClickPart.CFrame * CFrame.new(0,0,3))
+                            Fast = false
+                            wait(0.1)
+                        end
+                    end
+                end
+            end)
+        else
+            Fast = false
+        end
+    end
+end)
+
+spawn(function()
+    while wait() do
+        if AutoFarmRaid then
+            for i,v in pairs(game.Workspace.SpawnEnemy:GetDescendants()) do
+                if v:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500})) and v:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180})) and v.Humanoid.Health > 0 and (v.HumanoidRootPart.Position-game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 400 then
+                    pcall(function()
+                        repeat wait()
+                            sethiddenproperty(game.Players.LocalPlayer, PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,11025,11445,12285,11340,10185,12180,11025,11655,11550,8610,10185,10500,11025,12285,12075}), math.huge)
+                            v.HumanoidRootPart.CanCollide = false
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0, DistanceMob, 9)
+                            EquipWeapon(Weapon)
+                            if Method == PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8190,11655,11970,11445,10185,11340})then
+                                Click()
+                            elseif Method == PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7350,10185,12075,12180}) then
+                                Fast = true
+                            elseif Method == PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,12285,11760,10605,11970,3360,7350,10185,12075,12180}) then
+                                SuperFast = true
+                            else
+                                Click()
+                            end
+                        until not AutoFarmRaid or not v.Parent or v.Humanoid.Health <= 1
+                    end)
+                end
+            end
+        end
+    end
+end)
+
+spawn(function()
+    while wait() do
+        if Melee then
+            pcall(function()
+                local args = {
+                    [1] = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8085,10605,11340,10605,10605})
+                }
+
+                game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605})):WaitForChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,12180,10185,12180,8715,12705,12075,12180,10605,11445})):WaitForChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11655,11025,11550,12180,12075})):FireServer(unpack(args))
+            end)
+        end
+    end
+end)
+
+spawn(function()
+    while wait() do
+        if Defense then
+            pcall(function()
+                local args = {
+                   [1] = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8085,10185,12600,7560,10605,10185,11340,12180,10920})
+                }
+
+                game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605})):WaitForChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,12180,10185,12180,8715,12705,12075,12180,10605,11445})):WaitForChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11655,11025,11550,12180,12075})):FireServer(unpack(args))
+            end)
+        end
+    end
+end)
+spawn(function()
+    while wait() do
+        if Sword then
+            pcall(function()
+                local args = {
+                    [1] = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,12495,11655,11970,10500})
+                }
+
+                game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605})):WaitForChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,12180,10185,12180,8715,12705,12075,12180,10605,11445})):WaitForChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11655,11025,11550,12180,12075})):FireServer(unpack(args))
+            end)
+        end
+    end
+end)
+
+spawn(function()
+    while wait() do
+        if DevilFruit then
+            pcall(function()
+                local args = {
+                    [1] = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7140,10605,12390,11025,11340,7350,11970,12285,11025,12180})
+                }
+
+                game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605})):WaitForChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,12180,10185,12180,8715,12705,12075,12180,10605,11445})):WaitForChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11655,11025,11550,12180,12075})):FireServer(unpack(args))
+            end)
+        end
+    end
+end)
+
+spawn(function()
+    while wait() do
+        if KillauraRaid then
+            for i,v in pairs(game.Workspace.SpawnEnemy:GetDescendants()) do
+                if v:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500})) and v:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180})) and v.Humanoid.Health > 0 and (v.HumanoidRootPart.Position-game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 400 then
+                    pcall(function()
+                        repeat wait()
+                            sethiddenproperty(game.Players.LocalPlayer, PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,11025,11445,12285,11340,10185,12180,11025,11655,11550,8610,10185,10500,11025,12285,12075}), math.huge)
+                            v.Humanoid.Health = 0
+                            v.HumanoidRootPart.CanCollide = false
+                            v.HumanoidRootPart.Size = Vector3.new(50,50,150)
+                            v.HumanoidRootPart.Transparency = 1000
+                        until not KillauraRaid or not v.Parent or v.Humanoid.Health <= 1
+                    end)
+                end
+            end
+        end
+    end
+end)
+
+spawn(function()
+    while wait(0.0) do
+        if CBLRaid or Fast then
+            pcall(function()
+                local args = {
+                    [1] = 2,
+                    [2] = game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer
+                }
+                if game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character[Vtool]:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,10185,10395,11235,10605,11970,8715,11655,5145,8820,10920,10605,7455,11025,11655,11025})) then
+                    game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character[Vtool].HackerSo1TheGioi.RemoteEvent:FireServer(unpack(args))
+                elseif game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character[Vtool]:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6825,12180,12180,10185,10395,11235})) then
+                    game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character[Vtool].Attack.RemoteEvent:FireServer(unpack(args))
+                end
+            end) 
+        end
+    end
+end)
+
+local CoreGui = game:GetService(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,12180,10185,11970,12180,10605,11970,7455,12285,11025}))
+CoreGui:SetCore(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}), {
+    Title = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6825,11970,3360,7140,11970,10185,11235,3360,7560,12285,10290}),
+    Text = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6930,12705,3360,9975,7980,11025,10290,10290,11025}),
+    Icon = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5880,5880,5460,5460,5145,5460,5355,5040,5355,5145}),
+    Duration = math.huge,
+    Callback = AllowRunServiceBind,
+    Button1 = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({}),
+    Button2 = PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({}),
+})
+
+
+game.Players.LocalPlayer.Character.ChildAdded:Connect(function(tools)
+    if tools:IsA(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({8820,11655,11655,11340})) then
+        if tools:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,10185,10395,11235,10605,11970,8715,11655,5145,8820,10920,10605,7455,11025,11655,11025})) or tools:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({6825,12180,12180,10185,10395,11235})) or tools:FindFirstChild(PiYdqCfSSQYdksscmEGHvguPtcjsyeSvnwvNKpxWAiJtGmnAbQLjanmBNhToxrZoVlHnisPZCWUJdep({7560,10185,10395,11235,10605,11970,7140,10605,11760,8820,11970,10605,10185,11025})) then 
+            Vtool = tools.Name
+        end
+    end
+end)            
