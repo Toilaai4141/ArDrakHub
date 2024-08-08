@@ -1,9 +1,25 @@
-if game.PlaceId == 10464237910 then
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Toilaai4141/Freefrai/main/Toilafanmettobiet
-  elseif game.PlaceId == 10260193230 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Humatthhhuu/Ulatroi/main/Source%20(6).txt"))()
- elseif game.GameId == 3647333358 or game.PlaceId == 9872472334 then
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/random/main/.x.vr.e.hi/evade.lua"))()
-  elseif game.GameId == 323675642 then
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/random/main/.x.vr.e.hi/fe2.lua"))()
-end
+Error during obfuscation: lua: ./src\logger.lua:54: Lexing Error at Position 301:45, Unexpected char "\064"!
+
+stack traceback:
+
+	[C]: in function 'error'
+
+	./src\logger.lua:54: in function 'errorCallback'
+
+	./src\logger.lua:57: in function 'error'
+
+	./src\prometheus\tokenizer.lua:534: in function 'next'
+
+	./src\prometheus\tokenizer.lua:540: in function 'scanAll'
+
+	./src\prometheus\parser.lua:143: in function 'parse'
+
+	./src\prometheus\pipeline.lua:178: in function 'apply'
+
+	./src\cli.lua:148: in main chunk
+
+	[C]: in function 'require'
+
+	./cli.lua:12: in main chunk
+
+	[C]: ?
