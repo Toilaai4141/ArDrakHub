@@ -407,38 +407,6 @@ local Tabs = {
     NguTab = Window:AddTab({ Title = "Fruit", Icon = "rbxassetid://17515562390" }),
 }
 
-Tabs.NguTab:AddButton({
-        Title = "Grab Fruit",
-        Description = "teleport fruit player drop",
-        Callback = function()
-        pcall(function()
-        for _,v in pairs(game.workspace:GetChildren()) do
-            if string.find(v.Name,"Fruit") then
-                if v:IsA("Tool") then
-                    v.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-                end
-            end
-        end
-    end)
-         end
-    })
-    
-    Tabs.NguTab:AddButton({
-        Title = "Grab Ball",
-        Description = "",
-        Callback = function()
-        pcall(function()
-        for _,v in pairs(game.workspace:GetChildren()) do
-            if string.find(v.Name, "DB1") or string.find(v.Name, "DB2") or string.find(v.Name, "DB3") or string.find(v.Name, "DB4") or string.find(v.Name, "DB5") or string.find(v.Name, "DB6") or string.find(v.Name, "DB7") then
-                if v:IsA("Tool") then
-                    v.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-                end
-            end
-        end
-    end)
-         end
-    })
-
 local Tabs = {
     OcTab = Window:AddTab({ Title = "Teleport", Icon = "rbxassetid://17515562390" }),
 }
