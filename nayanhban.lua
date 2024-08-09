@@ -320,12 +320,6 @@ local Toggle = Tabs.MainTab:AddToggle("Toggle", {Title = "Kill Aura Raids", Defa
         KillauraRaid = value
     end)
     
-local Toggle = Tabs.MainTab:AddToggle("Toggle", {Title = "Fast Attacks Raid", Default = false })
-
-    Toggle:OnChanged(function(value)
-        CBLRaid = value
-    end)
-    
 Tabs.MainTab:AddParagraph({
         Title = "Lever Farm",
         Content = "lonmamay"
@@ -381,13 +375,39 @@ local Toggle = Tabs.ArTab:AddToggle("Toggle", {Title = "Auto Fruit", Default = f
     
 --   Dark   Light  Aqua Amethyst
 local Tabs = {
-    MiscTab = Window:AddTab({ Title = "Esp", Icon = "rbxassetid://17515562390" }),
+    MiscTab = Window:AddTab({ Title = "Settings", Icon = "settings" }),
 }
 
---   Dark   Light  Aqua Amethyst
-local Tabs = {
-    NguTab = Window:AddTab({ Title = "Fruit", Icon = "rbxassetid://17515562390" }),
-}
+local Toggle = Tabs.MiscTab:AddToggle("Toggle", {Title = "Fast Attacks", Default = false })
+
+    Toggle:OnChanged(function(value)
+        CBLRaid = value
+    end)
+    
+    local Slider = Tabs.Misc:AddSlider("Slider", {
+        Title = "DistanceMob Farm Lv",
+        Description = "",
+        Default = 7,
+        Min = 0,
+        Max = 9,
+        Rounding = 1,
+        Callback = function(Value)
+            DistanceMob = Value
+        end
+    })
+    
+    local Slider = Tabs.MiscTab:AddSlider("Slider", {
+        Title = "DistanceMob Farm Raid",
+        Description = "",
+        Default = 7,
+        Min = 0,
+        Max = 9,
+        Rounding = 1,
+        Callback = function(Value)
+            DistanceMob = Value
+        end
+    })
+    
 
 local Tabs = {
     OcTab = Window:AddTab({ Title = "Teleport", Icon = "rbxassetid://17515562390" }),
@@ -420,15 +440,15 @@ local Tabs = {
 
 Tabs.LonTab:AddButton({
         Title = "Tp To Sword spam",
-        Description = "Very important button",
+        Description = "",
         Callback = function()
            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-896.626831, 75.8225098, -3601.07373, -0.327141702, 0, 0.944975376, 0, 1.00000012, -0, -0.944975257, 0, -0.327141732)
         end
     })
     
 Tabs.LonTab:AddButton({
-        Title = "Tp To Sword spam",
-        Description = "Very important button",
+        Title = "Tp To Melee New",
+        Description = "",
         Callback = function()
            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(150.250183, 477.125305, 1698.29272, 0.950112522, 0, 0.311907351, -0, 1, -0, -0.311907351, 0, 0.950112522)
         end
@@ -704,7 +724,7 @@ spawn(function()
 end)
 
 spawn(function()
-    while wait(0.0) do
+    while wait(0) do
         if CBLRaid or Fast then
             pcall(function()
                 local args = {
