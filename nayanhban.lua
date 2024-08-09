@@ -313,6 +313,13 @@ local Toggle = Tabs.MainTab:AddToggle("Toggle", {Title = "Auto Fram Raids", Defa
     Toggle:OnChanged(function(value)
         AutoFarmRaid = value
     end)
+    
+ local Toggle = Tabs.MainTab:AddToggle("Toggle", {Title = "Fast Attacks", Default = false })
+
+    Toggle:OnChanged(function(value)
+        CBLRaid = value
+    end)
+    
 
 local Toggle = Tabs.MainTab:AddToggle("Toggle", {Title = "Kill Aura Raids", Default = false })
 
@@ -371,17 +378,6 @@ local Toggle = Tabs.ArTab:AddToggle("Toggle", {Title = "Auto Fruit", Default = f
 
     Toggle:OnChanged(function(value)
         DevilFruit = value
-    end)
-    
---   Dark   Light  Aqua Amethyst
-local Tabs = {
-    MiscTab = Window:AddTab({ Title = "Settings", Icon = "settings" }),
-}
-
-local Toggle = Tabs.MiscTab:AddToggle("Toggle", {Title = "Fast Attacks", Default = false })
-
-    Toggle:OnChanged(function(value)
-        CBLRaid = value
     end)
     
 local Tabs = {
