@@ -384,31 +384,6 @@ local Toggle = Tabs.MiscTab:AddToggle("Toggle", {Title = "Fast Attacks", Default
         CBLRaid = value
     end)
     
-    local Slider = Tabs.Misc:AddSlider("Slider", {
-        Title = "DistanceMob Farm Lv",
-        Description = "",
-        Default = 7,
-        Min = 0,
-        Max = 9,
-        Rounding = 1,
-        Callback = function(Value)
-            DistanceMob = Value
-        end
-    })
-    
-    local Slider = Tabs.MiscTab:AddSlider("Slider", {
-        Title = "DistanceMob Farm Raid",
-        Description = "",
-        Default = 7,
-        Min = 0,
-        Max = 9,
-        Rounding = 1,
-        Callback = function(Value)
-            DistanceMob = Value
-        end
-    })
-    
-
 local Tabs = {
     OcTab = Window:AddTab({ Title = "Teleport", Icon = "rbxassetid://17515562390" }),
 }
