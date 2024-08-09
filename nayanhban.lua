@@ -384,25 +384,6 @@ local Tabs = {
     MiscTab = Window:AddTab({ Title = "Esp", Icon = "rbxassetid://17515562390" }),
 }
 
-local Toggle = Tabs.MiscTab:AddToggle("Dragon Ball", {Title = "Toggle", Default = false })
-
-    Toggle:OnChanged(function(va)
-        DragonBallESP = va
-    while DragonBallESP do wait()
-        UpdateDBEsp() 
-       end
-    end)
-    
-    
- local Toggle = Tabs.MiscTab:AddToggle("MyToggle", {Title = "Esp Fruit", Default = false })
-
-    Toggle:OnChanged(function(va)
-        DevilFruitESP = va
-    while DevilFruitESP do wait()
-        UpdateBfEsp() 
-       end
-    end)
-    
 --   Dark   Light  Aqua Amethyst
 local Tabs = {
     NguTab = Window:AddTab({ Title = "Fruit", Icon = "rbxassetid://17515562390" }),
